@@ -16,9 +16,9 @@ spring:
 
 doma:
   dialect: postgres
-  # SQLƒtƒ@ƒCƒ‹‚ðƒLƒƒƒbƒVƒ…‚·‚é
+  # SQLãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã™ã‚‹
   sql-file-repository: greedy_cache
-  # ƒoƒ‹ƒNƒCƒ“ƒT[ƒgEƒAƒbƒvƒf[ƒg‚ÌƒTƒCƒY
+  # ãƒãƒ«ã‚¯ã‚¤ãƒ³ã‚µãƒ¼ãƒˆãƒ»ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã®ã‚µã‚¤ã‚º
   batch-size: 1000
 
 
