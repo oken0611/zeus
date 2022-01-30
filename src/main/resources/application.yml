@@ -21,6 +21,13 @@ doma:
   # バルクインサート・アップデートのサイズ
   batch-size: 1000
 
+server:
+  port: 8080
+  servlet:
+    session:
+      # イントラネット利用を想定
+      timeout: 60m
+    context-path: /zeus
 
 
 
