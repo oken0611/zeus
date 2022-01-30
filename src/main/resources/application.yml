@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/tms?currentSchema=public
+    username: root
+    password: root
+    hikari:
+      # Default: 30000 (30 seconds)
+      connection-timeout: 60000
+      connection-test-query: SELECT 1
+      # Default: same as maximumPoolSize
+      minimum-idle: 50
+      # Default: 10
+      maximum-pool-size: 500
+      auto-commit: false
+
+doma:
+  dialect: postgres
+  # SQLファイルをキャッシュする
+  sql-file-repository: greedy_cache
+  # バルクインサート・アップデートのサイズ
+  batch-size: 1000
+
+
+
+
+
+
+
