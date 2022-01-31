@@ -1,9 +1,11 @@
+version: "3"
+services:
   postgresql:
-    image: postgres:13.1
+    image: postgres:14.1
     command: postgres -c log_destination=stderr -c log_statement=all -c log_connections=on -c log_disconnections=on
     container_name: postgresql
     ports:
-      - 5433:5432
+      - 5432:5432
     volumes:
       - ./postgres/init:/docker-entrypoint-initdb.d
     environment:
@@ -15,14 +17,14 @@
     user: root
 
   pgadmin4:
-    image: dpage/pgadmin4:4.29
+    image: dpage/pgadmin4:latest
     container_name: pgadmin4
     ports:
       - 8081:8080
     volumes:
       - ./pgadmin:/var/lib/pgadmin/storage
     environment:
-      PGADMIN_DEFAULT_EMAIL: root
-      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_DEFAULT_EMAIL: root@test.com
+      PGADMIN_DEFAULT_PASSWORD: root1234
     hostname: pgadmin4
     restart: always
