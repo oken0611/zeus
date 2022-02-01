@@ -17,7 +17,7 @@
 		<repository>
 			<id>com.e-iceblue</id>
 			<name>e-iceblue</name>
-			<url>http://repo.e-iceblue.com/nexus/content/groups/public/</url>
+			<url>https://repo.e-iceblue.com/nexus/content/groups/public/</url>
 		</repository>
 	</repositories>
 
@@ -65,11 +65,10 @@
 			<artifactId>jxls-poi</artifactId>
 			<version>2.11.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/e-iceblue/spire.pdf.free -->
 		<dependency>
-			<groupId>e-iceblue</groupId>
-			<artifactId>spire.xls.free</artifactId>
-			<version>5.1.0</version>
+		  <groupId>e-iceblue</groupId>
+		  <artifactId>spire.xls.free</artifactId>
+		  <version>5.1.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seasar.doma.boot/doma-spring-boot-starter -->
 		<dependency>
