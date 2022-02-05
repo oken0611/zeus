@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5433/dev01?currentSchema=public
+    url: jdbc:postgresql://localhost:5432/dev01?currentSchema=public
     username: dev01
     password: dev01
     hikari:
@@ -22,7 +22,7 @@ doma:
   batch-size: 1000
 
 server:
-  port: 8080
+  port: 8082
   servlet:
     session:
       # イントラネット利用を想定
