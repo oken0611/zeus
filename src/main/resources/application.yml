@@ -13,6 +13,10 @@ spring:
       # Default: 10
       maximum-pool-size: 500
       auto-commit: false
+  # hotRestart有効化
+  devtools:
+    restart:
+      enabled: true
 
 doma:
   dialect: postgres

@@ -76,6 +76,7 @@
 			<artifactId>doma-spring-boot-starter</artifactId>
 			<version>1.6.0</version>
 		</dependency>
+		<!-- この定義がないとDaoクラスの実行クラスを作成してくれない -->
 		<dependency>
 			<groupId>org.seasar.doma</groupId>
 			<artifactId>doma-processor</artifactId>
@@ -94,6 +95,13 @@
 			<artifactId>jquery</artifactId>
 			<version>3.6.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.mygreen/xlsmapper -->
+		<dependency>
+			<groupId>com.github.mygreen</groupId>
+			<artifactId>xlsmapper</artifactId>
+			<version>2.2</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
