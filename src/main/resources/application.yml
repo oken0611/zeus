@@ -33,6 +33,11 @@ server:
       timeout: 60m
     context-path: /zeus
 
+keel:
+  transaction:
+    token:
+      # すべてのリクエストパスが2重送信防止対象
+      path-patterns: /**
 
 
 

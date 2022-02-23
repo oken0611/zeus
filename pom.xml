@@ -101,6 +101,13 @@
 			<artifactId>xlsmapper</artifactId>
 			<version>2.2</version>
 		</dependency>
+		<!-- https://github.com/Fintan-contents/keel-spring-enhance/blob/master/keel-spring-web/keel-transaction-token-check/README.md -->
+		<!-- https://mvnrepository.com/artifact/jp.fintan.keel/keel-transaction-token-check -->
+		<dependency>
+			<groupId>jp.fintan.keel</groupId>
+			<artifactId>keel-transaction-token-check</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 
 
 		<dependency>
