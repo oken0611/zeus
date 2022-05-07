@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/dev01?currentSchema=public
-    username: dev01
-    password: dev01
+    url: jdbc:postgresql://localhost:5432/testdb?currentSchema=public
+    username: dev
+    password: dev0611
     hikari:
       # Default: 30000 (30 seconds)
       connection-timeout: 60000
@@ -17,6 +17,7 @@ spring:
   devtools:
     restart:
       enabled: true
+
 
 doma:
   dialect: postgres

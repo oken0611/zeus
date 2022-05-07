@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<head lang="ja">
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.1/css/bootstrap.min.css}">
     <title>ログイン</title>
@@ -16,7 +16,7 @@
     <form th:action="@{/login}" method="post">
         <table class="table table-bordered col-md-6">
             <tr class="form-group">
-                <th class="align-middle">名前</th>
+                <th class="align-middle">ログインID</th>
                 <td><input type="text" class="form-controll" name="name"></td>
             </tr>
             <tr class="form-group">
@@ -29,7 +29,9 @@
         </div>
     </form>
 </div>
-<script src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
-<script src="@{/webjars/bootstrap/4.6.1/js/bootstrap.min.js}"></script>
+<script th:src="@{/webjars/jquery/3.5.1/jquery.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.6.1/js/bootstrap.min.js}"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script th:src="@{/js/login.js}"></script>
 </body>
 </html>

@@ -28,6 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 // 「login.html」はログイン不要でアクセス可能に設定
                 .antMatchers("/login").permitAll()
+                .antMatchers("/status/**").permitAll()
                 // 区分値マスタリキャッシュは自サーバからのアクセスのみ許可
                 .antMatchers("/commons/cache/reload").hasIpAddress("127.0.0.1")
                 //上記以外は直リンク禁止
